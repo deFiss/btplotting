@@ -136,7 +136,7 @@ def filter_obj(obj, filterdata):
             if isinstance(filterdata['dataname'], str):
                 if dataname != filterdata['dataname']:
                     return True
-            elif isinstance(filterdata['dataname', list]):
+            elif isinstance(filterdata['dataname'], list):
                 if dataname not in filterdata['dataname']:
                     return True
         else:

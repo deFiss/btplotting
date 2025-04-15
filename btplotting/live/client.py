@@ -196,7 +196,7 @@ class LiveClient:
     def _get_filterdata(self):
         res = {}
         if self._filterdata.startswith('D'):
-            res['dataname'] = self._filterdata[1:]
+            res['dataname'] = get_datanames(self._strategy)
         elif self._filterdata.startswith('G'):
             res['group'] = self.plotgroup
         return res
