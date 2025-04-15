@@ -19,13 +19,12 @@ class LivePlotAnalyzer(bt.Analyzer):
     params = (
         ('scheme', Blackly()),
         ('style', 'bar'),
-        ('lookback', 0),
+        ('lookback', 23),
         ('address', 'localhost'),
-        ('port', 1234),
+        ('port', 80),
         ('title', None),
-        ('interval', 0.1),
+        ('interval', 0.2),
         ('paused_at_beginning', False),
-        ('debug', False)
     )
 
     def __init__(self, iplot=True, autostart=False, **kwargs):
